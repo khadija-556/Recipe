@@ -1,0 +1,17 @@
+<ul>
+
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="{% url 'Recipi_catagories' %}">Recipi_catagories</a></li>
+    <li><a href="{% url 'Recipi' %}">Recipi</a></li>
+    <li><a href="{% url 'viewRecipi' %}">viewRecipi</a></li>
+    
+    
+    <li><a href="{% url 'logoutPage' %}">logout</a></li>
+    <li class="search">
+      <form class="search-form" method="get" action="{% url 'search_results' %}">
+          <input type="text" name="query" placeholder="Search...">
+          <button type="submit"><i class="fa fa-search"></i></button>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      
+  </ul>
